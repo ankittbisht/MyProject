@@ -1,0 +1,179 @@
+/* css reset */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+#navbar {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    top: 0px;
+}
+
+#navbar::before {
+    content: '';
+    background-color: black;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+    opacity: 0.3;
+    z-index: -1;
+}
+
+#logo {
+    margin: 20px 20px;
+}
+
+#logo img {
+    height: 103px;
+    margin: 13px 24px;
+
+}
+
+ul {
+    display: flex;
+    align-items: center;
+
+}
+
+ul li {
+    list-style: none;
+    font-size: 1.5rem;
+}
+
+ul li a {
+    color: white;
+    display: block;
+    border-radius: 20px;
+    padding: 20px 20px;
+    text-decoration: none;
+}
+
+ul li a:hover {
+    background-color: white;
+    color: black;
+}
+
+/* section */
+#home {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 620px;
+
+}
+
+#home::before {
+    content: '';
+    background: url("bg.jpg") no-repeat center center/cover;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 592px;
+    width: 100%;;
+    opacity: 0.9;
+    z-index: -1;
+}
+
+#home h1 {
+    color: white;
+    text-align: center;
+}
+#home p{
+    color: white;
+    text-align: center;
+    font-size: 1.2rem;
+}
+/* services classes */
+#services{
+    display: flex;
+    margin: 30px;
+    justify-content: center;
+    align-items: center;
+}
+#services .box{
+    border: 2px solid crimson;
+    border-radius: 20px;
+    margin: 20px 20px;
+    padding: 15px;
+    background-color: white;
+}
+#services .box img{
+    height: 150px;
+    margin: auto;
+    display: block;
+}
+/* contact section */
+.contact{
+    position: relative;
+
+}
+.contact::before{
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.8;
+    background: url("bg1.jpg")no-repeat center center/ cover;
+
+}
+#contact-box{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+#contact-box input,
+#contact-box textarea{
+    width: 100%;
+    font-size: 1rem;
+    padding: 10px;
+    border-radius: 20px;
+}
+#contact-box label{
+    font-size: 1.2rem;
+
+
+}
+.group{
+    text-align: center;
+}
+
+/* utility classes */
+.h-primary {
+    text-align: center;
+    padding: 10px;
+    font-size: 4rem;  
+
+}
+.h-secondary {
+    text-align: center;
+    padding: 10px;
+    font-size: 2rem;  
+
+}
+.center{
+    text-align: center;
+}
+.btn {
+    color: white;
+    border: 2 solid black;
+    border-radius: 20px;
+    background-color:black;
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    text-decoration: none;
+    margin: 10px auto;
+    text-align: center;
+}
+footer{
+    background-color: black;
+    color: white;
+    padding: 10px 20px;
+}

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>animation</title>
+    <style>
+        .container{
+            background-color: chartreuse;
+            display: block;
+            /* justify-content: center;
+            align-items: center; */
+            width: 30%;
+            margin: 0px auto;
+            height: 400px;
+            animation-name: ankit;
+            animation-duration: 3s;
+            animation-iteration-count: 1;
+            animation-fill-mode:both;
+            animation-direction: reverse;
+
+
+        }
+        @keyframes ankit {
+            from{
+                width: 30%;
+                /* height: 400px; */
+            }
+            to{
+                width: 50%;
+                /* height: 600px; */
+            }
+        }
+        h1{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>this is the container</h1>
+    </div>
+    
+</body>
+</html>
